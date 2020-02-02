@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Profile</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+      integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.7.1/css/all.css"
+      integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+      crossorigin="anonymous"
+    />
+
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/jquery.js"></script>
+
+    <style>
+      body {
+        background: #eaeaea;
+      }
+
+      .navbar {
+        background: #fff;
+        padding: 0;
+        padding-bottom: 35px;
+        height: 60px;
+        margin-top: 0px;
+        margin: 0;
+      }
+      .navbar-nav .nav-link {
+        color: #ff4e00;
+        letter-spacing: 0.5px;
+      }
+
+      /*-- header --*/
+      .header {
+        background: #000;
+        color: #fff;
+        font-size: 1rem;
+        /* padding: 3px; */
+        text-align: center;
+      }
+      .header .col-4 {
+      }
+      .header a {
+        color: #fff;
+        text-decoration: none;
+      }
+      .header i {
+        margin-right: 12px;
+        top: 2px;
+        color: #fa8334;
+      }
+
+      .container {
+        margin-top: 35px;
+      }
+      .name {
+        margin-top: 30px;
+      }
+      .user-details {
+        position: relative;
+        padding: 0;
+      }
+      .user-details .user-image {
+        z-index: 1;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+      }
+      .user-image img {
+        background: #fff;
+        z-index: 9;
+        border-radius: 50%;
+        width: 110px;
+        height: 110px;
+      }
+
+      .user-details .user-info-block {
+        width: 100%;
+        background: rgb(255, 255, 255);
+        z-index: 0;
+        padding-top: 35px;
+      }
+      .user-info-block .user-heading {
+        width: 100%;
+        text-align: center;
+        margin: 10px 0 0;
+      }
+      .user-info-block .navigation {
+        float: left;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        border-bottom: 1px solid #428bca;
+        border-top: 1px solid #428bca;
+      }
+      .navigation li {
+        float: left;
+        margin: 0;
+        padding: 0;
+      }
+      .navigation li a {
+        padding: 10px 20px;
+        float: left;
+      }
+      .navigation li.active a {
+        background: #428bca;
+        color: #fff;
+      }
+      .user-info-block .user-body {
+        float: left;
+        padding: 5%;
+        width: 90%;
+      }
+      .user-body .tab-content > div {
+        float: left;
+        width: 100%;
+      }
+      .user-body .tab-content h4 {
+        width: 100%;
+        margin: 10px 0;
+        color: #333;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav id="nav" class="navbar navbar-expand " id="mainNav">
+        <div class="container">
+          <a href="./index.html" class="navbar-brand smooth-scroll">
+            <img src="./css/img/LOGOJI.png"
+          /></a>
+
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarResponsive"
+            aria-controls="navbarResponsive"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <i class="fa fa-bars" aria-hidden="true"></i>
+            <!-- <span class="navbar-toggler-icon"></span> -->
+          </button>
+          <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto">
+              <li class="active nav-item">
+                <a class="nav-link" href="index.html">
+                  Home
+                </a>
+              </li>
+              <li class="active nav-item">
+                <a class="nav-link" href="option.html">
+                  Order
+                </a>
+              </li>
+
+              <li class="active nav-item">
+                <a class="nav-link user-logout" href="#logout" id="logout"
+                  >Logout</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <div class="container mt-2">
+      <div class="row">
+        <div class="col-sm-12 col-md-12 user-details">
+          <div class="user-info-block">
+            <div class="user-heading pb-3 pb-0">
+              <h3 class="name mt-0"></h3>
+              <span class="help-block city"></span>
+            </div>
+
+            <div class="user-body">
+              <div class="tab-content">
+                <div id="information" class="tab-pane active"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="accordion pb-5" id="accordionExample"></div>
+    </div>
+    <script src="js/jquery.session.js" charset="utf-8"></script>
+    <script src="js/auth.js" charset="utf-8"></script>
+    <script>
+      $(document).ready(function() {
+        let api = "http://morning-cliffs-75850.herokuapp.com/orders/1";
+        var t = sessionStorage.getItem("userdata");
+        let tmp1 = JSON.parse(t);
+        let html = "";
+
+        $.getJSON(api, function(data) {
+          let s = data.map(a => {
+            if (a["order_id"] && a["user_id"]) {
+              return a;
+            }
+          });
+          let p = data.map(a => {
+            if (a["order_id"] && a["item_id"]) {
+              return a;
+            }
+          });
+
+          for (let i = 0; i < s.length; i++) {
+            let item = [];
+            if (s[i] != undefined) {
+              for (let j = 0; j < p.length; j++) {
+                if (p[j] != undefined && s[i].order_id == p[j].order_id) {
+                  item.push(p[j]);
+                }
+              }
+              console.log(item);
+
+              html += `<div class="card">
+                <div class="card-header" id="headingOne">
+                  <h2 class="mb-0">
+                    <button
+                      class="btn btn-link"
+                      type="button"
+                      data-toggle="collapse"
+                      data-target="#collapse${s[i].order_id}"
+                      aria-expanded="true"
+                      aria-controls="collapseOne"
+                    >
+                      Order ${s[i].order_id}
+                    </button>
+                  </h2>
+                </div>
+
+                <div
+                  id="collapse${s[i].order_id}"
+                  class="collapse show"
+                  aria-labelledby="headingOne"
+                  data-parent="#accordionExample"
+                >
+                <div class="card-body">
+                `;
+              for (let k = 0; k < item.length; k++) {
+                html += `
+                <p >
+                      ${item[k].item_name} : ${item[k].item_price} Rs.
+                 </p>`;
+              }
+              html += `
+                  <p>Payment-id :  ${s[i].payment_id}</p>
+                  <p>Total-Pay :  ${s[i].total_pay}</p>
+                  </div>
+                </div>
+              </div>`;
+            }
+          }
+          $("#accordionExample").html(html);
+        });
+
+        if (tmp1 !== null) {
+          $(".name").html(`${tmp1.username}`);
+          $(".city").html(`${tmp1.area}`);
+          $("#information").html(`
+                <h4>Account Information</h4>
+                <p><span>Email: </span>${tmp1.email}</p>
+
+                `);
+        } else {
+          window.location = "login.html";
+        }
+      });
+    </script>
+  </body>
+</html>

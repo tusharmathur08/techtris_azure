@@ -1,0 +1,177 @@
+@media (min-width: 1200px) and (max-width: 1299px) {
+  .site-nav-wrapper {
+    padding: 0 20px;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .site-nav-wrapper {
+    padding: 0;
+  }
+  .vertical-heading h2 {
+    font-size: 29px;
+  }
+  #services-tabs .tab-bg {
+    padding: 16px 30px;
+    min-height: 300px;
+  }
+  .service-tab p {
+    line-height: 20px;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .site-nav-wrapper {
+    padding: 0;
+  }
+  #home-heading h1 {
+    font-size: 41px;
+  }
+  #home-text-p {
+    font-size: 13px;
+  }
+  .btn-general {
+    padding: 8px 35px 8px 35px;
+    font-size: 10px;
+  }
+  .vertical-heading h2 {
+    font-size: 29px;
+  }
+}
+@media (max-width: 767px) {
+  #nav .nav-link {
+    padding: 10px;
+  }
+
+  div .icon {
+    text-align: left;
+  }
+
+  #home-heading h1 {
+    font-size: 22px;
+  }
+  #home-text-p {
+    font-size: 13px;
+    line-height: 18px;
+    margin: 8px 2px 30px 2px;
+  }
+  .btn-general {
+    padding: 8px 25px 6px 25px;
+    font-size: 10px;
+  }
+  .content-box-lg {
+    padding: 90px 0;
+  }
+  .vertical-heading {
+    text-align: center;
+  }
+  .vertical-heading h5 {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+    display: block;
+    position: static;
+    margin-bottom: 15px;
+  }
+  .vertical-heading h2 {
+    font-size: 29px;
+    line-height: normal;
+    margin: 0;
+  }
+  #about-left {
+    margin-bottom: 50px;
+  }
+  #about-right {
+    text-align: center;
+  }
+  .content-box-md {
+    text-align: center;
+    padding: 80px 0;
+  }
+  .about-item {
+    padding: 55px 30px;
+    margin-bottom: 35px;
+  }
+  .about-item i {
+    font-size: 30px;
+  }
+  .about-item h3 {
+    font-size: 18px;
+  }
+  #team-left .vertical-heading {
+    min-height: 130px;
+  }
+  #skill h4 {
+    font-size: 14px;
+    line-height: 35px;
+  }
+  #tech-statement h3 {
+    font-size: 20px;
+    line-height: 30px;
+  }
+  .horizontal-heading {
+    margin-bottom: 40px;
+  }
+  .horizontal-heading h2 {
+    font-size: 30px;
+  }
+  #services-01 img {
+    width: 100%;
+    margin: 35px 0;
+  }
+  .services,
+  .service .icon {
+    text-align: center;
+  }
+  .service h4 {
+    font-size: 18px;
+  }
+  .r-tabs-accordian-title {
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  .r-tabs-accordion-title a {
+    font-family: "Raleway", sans-serif;
+    font-size: 13px;
+    color: #212226;
+    text-transform: uppercase;
+    font-weight: 400;
+    padding: 0;
+    text-decoration: none;
+  }
+  .r-tabs-accordian-title.r-tabs-state-active a {
+    color: #fa8334;
+    font-weight: 700;
+    border-bottom: 3px solid #fa8334;
+    padding-bottom: 5px;
+    -webkit-transition: border-color 300ms linear;
+    transition: border-color 300ms linear;
+  }
+  #services-tabs .tab-bg {
+    text-align: center;
+    padding: 40px 30px;
+  }
+  #services-tabs h2 {
+    font-size: 40px;
+  }
+  #services-tabs h3 {
+    font-size: 28px;
+  }
+  .stats-item {
+    margin-bottom: 20px;
+    padding: 25px 5px;
+  }
+  .stats-item i {
+    font-size: 30px;
+  }
+  .stats-item h3 {
+    font-size: 24px;
+  }
+  #blog-left {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  .blog-post {
+    margin-bottom: 25px;
+  }
+  #mobile-nav-open-btn {
+    display: block;
+  }
+}
